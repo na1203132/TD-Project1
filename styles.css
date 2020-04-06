@@ -55,14 +55,15 @@ a:hover {
   color: white
 }
 
-header {
+.home {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/firenze2.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  padding-bottom: 400px;
 }
-header {
+.home {
   line-height: 1.5;
 }
 header .profile-image {
@@ -70,17 +71,51 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border: 5px solid purple;
+  transition: all 1.5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.5) rotate(180deg);
 }
+
+.career {
+  text-align: center;
+  background: url('images/Academic.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 200px;
+}
+
+.contacts {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 200px;
+}
+
+
+.tag-career {
+  color: white;
+  text-shadow:5px 5px 10px gray;
+  padding: 10px;
+  border-radius: 30px;
+  display: table;
+  margin: 10px auto;
+}
+
+.tag-contacts {
+  color: Black;
+  padding: 10px;
+  border-radius: 30px;
+  display: table;
+  margin: 100px auto;
+}
+
 .tag {
   background-color: #efefef;
   color: black;
+  text-shadow:5px 5px 10px gray;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 25px;
   display: table;
   margin: 10px auto;
 } 
@@ -92,14 +127,15 @@ header .profile-image:hover {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
-  background: #fff;
+  text-align: center;
+  background: #DCDCDC;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #ff9904;
+  transform: scaleY(1.1)
 }
 
 ul.skills {
@@ -115,6 +151,30 @@ ul.skills {
   padding: 5px 10px;
   margin: 2px;
 }
+
+ul.career-skills {
+  padding: 0;
+  text-align: center;
+}
+
+.career-skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: hsl(115, 48%, 56%);
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.info{
+     display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: auto;
+}
+
 
 .skills li:nth-child(odd) {
   background: #0399ff;
